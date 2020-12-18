@@ -1,0 +1,74 @@
+body {
+    background: radial-gradient(at left bottom, #2ec1c9, #31186b);
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    font-size: 20px;
+}
+
+.test-container {
+    background: #00000077;
+    border-radius: 30px;
+    margin: 200px auto;
+    padding: 50px;
+    height: 600px;
+    width: 800px;
+}
+
+.text-config {
+    color: white;
+    height: 450px;
+}
+
+#question {
+    margin-bottom: 30px;
+}
+
+.buttons-config {
+    height: 50px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+}
+
+#next {
+    float: left;
+}
+
+#finish {
+    float: right;
+}
+
+.result-test {
+    margin: 100px 0 0 0;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+#percentage {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+}
+
+.back-button {
+    margin: 50px auto;
+    width: 250px;
+    height: 70px;
+}
+
+.form-check {
+    padding: 3px;
+}
+
+.form-check-label {
+    margin: -4px auto;
+}

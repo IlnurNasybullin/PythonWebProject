@@ -1,0 +1,108 @@
+{% load static %}
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <link rel="stylesheet" href="{% static 'css/expert_system.css' %}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <title>Рекомендательная система для абитуриента</title>
+</head>
+
+<body>
+    <div class="left-col"></div>
+    <div class="center-col">
+        <div class = "title-container">
+            Рекомендательная система для абитуриента
+        </div>
+
+        <div class="form-group mr-5 padding-class">
+            <label for="full_name" class="mr-3 left-margin">ФИО</label>
+            <div class="right-margin">
+                <input type="text" class="form-control" id="full_name">
+            </div>
+        </div>
+
+        <div class="form-group padding-class">
+            <label for="subjects" class="mr-3 left-margin">Предмет по выбору</label>
+            <div class="right-margin">
+                <select class="custom-select" id="subjects" size=1></select>
+            </div>
+        </div>
+
+        <div class="form-group mr-5 padding-class">
+            <label for="maths" class="mr-3 left-margin" id = "maths_label">Математика (профиль)</label>
+            <div class="right-margin">
+                <input type="number" class="form-control" id="maths">
+            </div>
+        </div>
+
+        <div class="form-group mr-5 padding-class">
+            <label for="russian" class="mr-3 left-margin" id = "russian_label">Русский язык</label>
+            <div class="right-margin">
+                <input type="number" class="form-control" id="russian">
+            </div>
+        </div>
+
+        <div class="form-group mr-5 padding-class">
+            <label for="selected_subject" class="mr-3 left-margin" id = "selected_subject_label">Предмет по выбору</label>
+            <div class="right-margin">
+                <input type="number" class="form-control" id="selected_subject">
+            </div>
+        </div>
+
+        <div class="form-group mr-5 padding-class">
+            <label for="passing_score" class="mr-3 left-margin" id = "passing_score_label">Проходной балл</label>
+            <div class="right-margin">
+                <input type="number" class="form-control" id="passing_score">
+            </div>
+        </div>
+
+        <div class="form-group padding-class">
+            <label for="universities" class="mr-3 left-margin">Выберите университет</label>
+            <div class="right-margin">
+                <select class="custom-select" id="universities" size=1></select>
+            </div>
+        </div>
+
+        <div class="padding-class buttons-config-class">
+            <div class = "button-config">
+                <button class="btn btn-primary" type="submit" id="submitButton">Проверить</button>
+            </div>
+
+            <div class = "button-config">
+                <button class="btn btn-primary" type="button" id="clear_button">Очистить</button>
+            </div>
+
+            <div class = "button-config">
+                <button class="btn btn-primary" type="button" onclick="location.href='{% url 'main' %}'">Назад</button>
+            </div>
+        </div>
+
+        <div class="form-group padding-class">
+            <label for="print_full_name" class="mr-3 left-margin">ФИО</label>
+            <label class="mr-3 right-margin" id = "print_full_name"></label>
+        </div>
+
+        <div class="form-group padding-class">
+            <label for="score_result" class="mr-3 left-margin">Достаточно баллов для поступления</label>
+            <label class="mr-3 right-margin" id = "score_result"></label>
+        </div>
+
+        <div class="padding-class">
+            <div class="left-margin">
+                <label for="instituts" class="instituts">Рекомендуемые институты</label>
+            </div>
+            <div class="text-block right-margin" id = "instituts"></div>
+        </div>
+    </div>
+    <div class="right-col"></div>
+</body>
+
+<script src = "{% static 'js/expert_system.js' %}"></script>
+
+</html>

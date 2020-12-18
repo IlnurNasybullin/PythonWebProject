@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{% static 'css/test.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+<div class="test-container">
+    <div class="text-config">
+        <div id="question"></div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="testAnswer" id="answer_1">
+            <label class="form-check-label" for="answer_1" id = "label_1"></label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="testAnswer" id="answer_2">
+            <label class="form-check-label" for="answer_2" id = "label_2"></label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="testAnswer" id="answer_3">
+            <label class="form-check-label" for="answer_3" id = "label_3"></label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="testAnswer" id="answer_4">
+            <label class="form-check-label" for="answer_4" id = "label_4"></label>
+        </div>
+    </div>
+
+    <div class="buttons-config">
+        <button id="next" class="btn btn-info" onclick="nextTestQuestion()">Далее</button>
+        <button id="finish" class="btn btn-secondary" onclick="finishTest()">Завершить тест</button>
+    </div>
+
+    <label id = "error_label" style = "color:#ff0000"/>
+</div>
+</body>
+
+<script type="text/javascript">
+    var tests_from_db = [
+    {% for test in tests %}
+        {
+            question: "{{ test.question }}",
+            answers: ["{{ test.answer_1 }}", "{{ test.answer_2 }}", "{{ test.answer_3 }}", "{{ test.answer_4 }}"],
+            right_answer: "{{ test.right_answer }}"
+        },
+    {% endfor %}
+    ]
+
+    var finish_url = "{% url 'test_finish' %}"
+</script>
+
+<script src="{% static 'js/test.js' %}"></script>
+
+</html>

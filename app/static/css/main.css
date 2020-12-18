@@ -1,0 +1,37 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url("../images/abiturients.jpg") no-repeat center top / cover;
+    font-family: Arial, serif;
+}
+
+.buttons-container {
+    background: #2f313655;
+    margin: 200px auto;
+    padding: 50px;
+    width: 350px;
+    height: 450px;
+}
+
+.btn {
+    border-radius: 10px;
+    display: block;
+    width: 240px;
+    padding: 30px 0;
+    margin: 20px auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.calculator-button-config {
+    background: #bd846d;
+    margin: 20px 80%;
+    height: 80px;
+}
+
+.calculator-button {
+    background-color: #bd846d;
+}

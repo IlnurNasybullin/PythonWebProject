@@ -1,0 +1,48 @@
+body {
+    background: radial-gradient(at left bottom, #2fa0b6, #31186b);
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+    color: #e69f17;
+}
+
+.image-text-container {
+    margin: 200px 0 0 300px;
+    height: 600px;
+}
+
+.clearfix:after{
+    content:'';
+    display: table;
+    width: 100%;
+    clear:both;
+}
+
+.image {
+    background: url("../images/test.webp") no-repeat top / cover;
+    height: 600px;
+    width: 500px;
+    float: left;
+}
+
+.text-button-context {
+    margin: 100px 0 0 100px;
+    width: 600px;
+    float: left;
+}
+
+.buttons-config {
+    margin: 20px 0 0 20px;
+    width: 150px;
+    float:left;
+    color: white;
+}
+
+.text-config {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}

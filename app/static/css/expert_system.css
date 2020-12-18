@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(to right, #E9D4C2, #E9D4C2);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, serif;
+    width:100%;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.left-col {
+    width: 30%;
+    height: 100%;
+    background: url("../images/student_woman.jpg") no-repeat top / cover;
+    float: left;
+}
+
+.title-container {
+    color: #2B3C66;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+.left-margin {
+    text-align: left;
+    width: 180px;
+    margin: 10px 0 0 40px;
+    float: left;
+    height: 15px;
+}
+
+.right-margin {
+    margin: 5px 0 0 40px;
+    height: 30px;
+    width: 400px;
+    float: left;
+}
+
+.center-col {
+    float: left;
+    height: 100%;
+    width: 40%;
+}
+
+.right-col {
+    background: url("../images/student_man.jpg") no-repeat top / cover;
+    float: right;
+    width: 30%;
+    height: 100%;
+}
+
+.padding-class {
+    padding-left: 20px;
+    height: 40px;
+}
+
+.buttons-config-class {
+    margin: 40px 10px;
+    height: 40px;
+    width: 100%;
+}
+
+.text-block {
+    height: 100px;
+    width: 400px;
+    float: left;
+}
+
+.btn {
+    width: 150px;
+    float: left;
+    margin-left: 10%;
+}

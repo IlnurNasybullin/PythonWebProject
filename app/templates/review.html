@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c971f31571364691878f4dc2bef5aa45 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c971f31571364691878f4dc2bef5aa45" ></div>
+        
+</body>
+<script>    
+    
+            var map_c971f31571364691878f4dc2bef5aa45 = L.map(
+                "map_c971f31571364691878f4dc2bef5aa45",
+                {
+                    center: [55.792365, 49.121841],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f5f83a95bace4c2982c19366871e73a9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var marker_e9be0f155ff549148cc5eb8e184af955 = L.marker(
+                [55.789588, 49.158507],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_1dbbeff1fd404b7cb88f98e00004a52d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e9be0f155ff549148cc5eb8e184af955.setIcon(icon_1dbbeff1fd404b7cb88f98e00004a52d);
+        
+    
+        var popup_a9165fac78b547709f90eba2f19d17ad = L.popup({"maxWidth": 2650});
+
+        
+            var html_4220d426f3614772996c7ce43df63baf = $(`<div id="html_4220d426f3614772996c7ce43df63baf" style="width: 100.0%; height: 100.0%;"><a href="https://kpfu.ru/ecology"target="_blank">КФУ Институт экологии и природопользования</a></div>`)[0];
+            popup_a9165fac78b547709f90eba2f19d17ad.setContent(html_4220d426f3614772996c7ce43df63baf);
+        
+
+        marker_e9be0f155ff549148cc5eb8e184af955.bindPopup(popup_a9165fac78b547709f90eba2f19d17ad)
+        ;
+
+        
+    
+    
+            var marker_b0a02893e22d4028aeda7d245c98cc07 = L.marker(
+                [55.794285, 49.113493],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_50e3cf72bfaf4517a18ba88fec82c5b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b0a02893e22d4028aeda7d245c98cc07.setIcon(icon_50e3cf72bfaf4517a18ba88fec82c5b7);
+        
+    
+        var popup_b327223ca155446b81fb66047e1480b5 = L.popup({"maxWidth": 2650});
+
+        
+            var html_72543d3e62844675992cae9cc80f19ed = $(`<div id="html_72543d3e62844675992cae9cc80f19ed" style="width: 100.0%; height: 100.0%;"><a href="https://geo.kpfu.ru/"target="_blank">КФУ Институт геологии и нефтегазовых технологий</a></div>`)[0];
+            popup_b327223ca155446b81fb66047e1480b5.setContent(html_72543d3e62844675992cae9cc80f19ed);
+        
+
+        marker_b0a02893e22d4028aeda7d245c98cc07.bindPopup(popup_b327223ca155446b81fb66047e1480b5)
+        ;
+
+        
+    
+    
+            var marker_8f03411696b44a09a637dfc16e62a6d8 = L.marker(
+                [55.7921, 49.1221],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_0c526306321c434abaa8c25d8daf1563 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f03411696b44a09a637dfc16e62a6d8.setIcon(icon_0c526306321c434abaa8c25d8daf1563);
+        
+    
+        var popup_5bf3114c986946c6a7e4c84304598e71 = L.popup({"maxWidth": 2650});
+
+        
+            var html_3c42e3183a62489fa64973df3acac045 = $(`<div id="html_3c42e3183a62489fa64973df3acac045" style="width: 100.0%; height: 100.0%;"><a href="http://imm.kpfu.ru/"target="_blank">КФУ Институт математики и механики им. Н.И. Лобачевского</a></div>`)[0];
+            popup_5bf3114c986946c6a7e4c84304598e71.setContent(html_3c42e3183a62489fa64973df3acac045);
+        
+
+        marker_8f03411696b44a09a637dfc16e62a6d8.bindPopup(popup_5bf3114c986946c6a7e4c84304598e71)
+        ;
+
+        
+    
+    
+            var marker_9e311166369f4f5d817c8515f0534e74 = L.marker(
+                [55.791597, 49.118227],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_e3ffadc2451c4cb08d28c801b4446342 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9e311166369f4f5d817c8515f0534e74.setIcon(icon_e3ffadc2451c4cb08d28c801b4446342);
+        
+    
+        var popup_14be11951c1d412b84b103f33660915e = L.popup({"maxWidth": 2650});
+
+        
+            var html_1ba7f296ef4142eeadde9657bee4972d = $(`<div id="html_1ba7f296ef4142eeadde9657bee4972d" style="width: 100.0%; height: 100.0%;"><a href="http://physics.kpfu.ru/"target="_blank">КФУ Институт физики</a></div>`)[0];
+            popup_14be11951c1d412b84b103f33660915e.setContent(html_1ba7f296ef4142eeadde9657bee4972d);
+        
+
+        marker_9e311166369f4f5d817c8515f0534e74.bindPopup(popup_14be11951c1d412b84b103f33660915e)
+        ;
+
+        
+    
+    
+            var marker_3faa829196b34704a80535d7eee59102 = L.marker(
+                [55.792397, 49.119583],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_4cc943699f7845c58e3fedfea196b75a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3faa829196b34704a80535d7eee59102.setIcon(icon_4cc943699f7845c58e3fedfea196b75a);
+        
+    
+        var popup_c65c392081e64be4af0af525fabb1398 = L.popup({"maxWidth": 2650});
+
+        
+            var html_8f56d12fe0d4428f93c684628b131786 = $(`<div id="html_8f56d12fe0d4428f93c684628b131786" style="width: 100.0%; height: 100.0%;"><a href="http://chemistry.kpfu.ru/"target="_blank">КФУ Химический институт им. А.М. Бутлерова</a></div>`)[0];
+            popup_c65c392081e64be4af0af525fabb1398.setContent(html_8f56d12fe0d4428f93c684628b131786);
+        
+
+        marker_3faa829196b34704a80535d7eee59102.bindPopup(popup_c65c392081e64be4af0af525fabb1398)
+        ;
+
+        
+    
+    
+            var marker_94c4f031d1fd4f639c4594bfc757059e = L.marker(
+                [55.790848, 49.121775],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_42e801f8e8ad498daeec80977f124333 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94c4f031d1fd4f639c4594bfc757059e.setIcon(icon_42e801f8e8ad498daeec80977f124333);
+        
+    
+        var popup_289192883cd54ae9bc7d60f71b8092e5 = L.popup({"maxWidth": 2650});
+
+        
+            var html_4903c41465a14708a1f964a27eef7a77 = $(`<div id="html_4903c41465a14708a1f964a27eef7a77" style="width: 100.0%; height: 100.0%;"><a href="http://law.kpfu.ru/"target="_blank">КФУ Юридический факультет</a></div>`)[0];
+            popup_289192883cd54ae9bc7d60f71b8092e5.setContent(html_4903c41465a14708a1f964a27eef7a77);
+        
+
+        marker_94c4f031d1fd4f639c4594bfc757059e.bindPopup(popup_289192883cd54ae9bc7d60f71b8092e5)
+        ;
+
+        
+    
+    
+            var marker_b2c48c1960df4cc6b9dba31afc1b43f6 = L.marker(
+                [55.7922, 49.1222],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_48c0682bbcbe45e6ac586ba4742a3154 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b2c48c1960df4cc6b9dba31afc1b43f6.setIcon(icon_48c0682bbcbe45e6ac586ba4742a3154);
+        
+    
+        var popup_85930d4826fe4b379b2d3ecedcc551ef = L.popup({"maxWidth": 2650});
+
+        
+            var html_a6dcd618fd8a4024a99d42d853f89651 = $(`<div id="html_a6dcd618fd8a4024a99d42d853f89651" style="width: 100.0%; height: 100.0%;"><a href="http://computing.kpfu.ru/"target="_blank">КФУ Институт вычислительной математики и информационных технологий</a></div>`)[0];
+            popup_85930d4826fe4b379b2d3ecedcc551ef.setContent(html_a6dcd618fd8a4024a99d42d853f89651);
+        
+
+        marker_b2c48c1960df4cc6b9dba31afc1b43f6.bindPopup(popup_85930d4826fe4b379b2d3ecedcc551ef)
+        ;
+
+        
+    
+    
+            var marker_6eb31298a5e74aec816b49cdcd71da55 = L.marker(
+                [55.784349, 49.116628],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_4340e8b6d9714bbbb2d9e8ae99d13e56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6eb31298a5e74aec816b49cdcd71da55.setIcon(icon_4340e8b6d9714bbbb2d9e8ae99d13e56);
+        
+    
+        var popup_7e7fd5fdacef454e8b9b1b1b1db86fb9 = L.popup({"maxWidth": 2650});
+
+        
+            var html_8b96b5fc6b624f208b77ead294dbf26a = $(`<div id="html_8b96b5fc6b624f208b77ead294dbf26a" style="width: 100.0%; height: 100.0%;"><a href="http://www.kpfu.ru/main_page?p_sub=222"target="_blank">КФУ Институт филологии и межкультурной коммуникации</a></div>`)[0];
+            popup_7e7fd5fdacef454e8b9b1b1b1db86fb9.setContent(html_8b96b5fc6b624f208b77ead294dbf26a);
+        
+
+        marker_6eb31298a5e74aec816b49cdcd71da55.bindPopup(popup_7e7fd5fdacef454e8b9b1b1b1db86fb9)
+        ;
+
+        
+    
+    
+            var marker_749c69d9c01e49098018b9574fe489e7 = L.marker(
+                [55.787938, 49.110968],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_0222a4a171234b15a4a6a71c20e4a112 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_749c69d9c01e49098018b9574fe489e7.setIcon(icon_0222a4a171234b15a4a6a71c20e4a112);
+        
+    
+        var popup_6f345363a4d54cd9b475766a116dbb2d = L.popup({"maxWidth": 2650});
+
+        
+            var html_80ed88dd74524befa7a11540bbc0ad8e = $(`<div id="html_80ed88dd74524befa7a11540bbc0ad8e" style="width: 100.0%; height: 100.0%;"><a href="http://kpfu.ru/main_page?p_sub=88"target="_blank">КФУ Институт психологии и образования</a></div>`)[0];
+            popup_6f345363a4d54cd9b475766a116dbb2d.setContent(html_80ed88dd74524befa7a11540bbc0ad8e);
+        
+
+        marker_749c69d9c01e49098018b9574fe489e7.bindPopup(popup_6f345363a4d54cd9b475766a116dbb2d)
+        ;
+
+        
+    
+    
+            var marker_70231f42c7b446f491602a5583d7dfa7 = L.marker(
+                [55.791172, 49.124084],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_ed92cfbdd675445b9b5072b9eeab3809 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70231f42c7b446f491602a5583d7dfa7.setIcon(icon_ed92cfbdd675445b9b5072b9eeab3809);
+        
+    
+        var popup_1be14f0472bf4a5db08a270ab3a8d64f = L.popup({"maxWidth": 2650});
+
+        
+            var html_1e9c87ca0fb144f2b718208073005a85 = $(`<div id="html_1e9c87ca0fb144f2b718208073005a85" style="width: 100.0%; height: 100.0%;"><a href="http://physical.kpfu.ru/"target="_blank">КФУ Общеуниверситетская кафедра физического воспитания и спорта</a></div>`)[0];
+            popup_1be14f0472bf4a5db08a270ab3a8d64f.setContent(html_1e9c87ca0fb144f2b718208073005a85);
+        
+
+        marker_70231f42c7b446f491602a5583d7dfa7.bindPopup(popup_1be14f0472bf4a5db08a270ab3a8d64f)
+        ;
+
+        
+    
+    
+            var marker_46dc07899f05497bbe725efbb497e5a9 = L.marker(
+                [55.791648, 49.123284],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_ac55e861c0be4608a60c1e4864b9239b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46dc07899f05497bbe725efbb497e5a9.setIcon(icon_ac55e861c0be4608a60c1e4864b9239b);
+        
+    
+        var popup_c1cde5cfa4e5420b8d3f4d9c02e335cd = L.popup({"maxWidth": 2650});
+
+        
+            var html_6d36a7da6885459a9986bfd8989e153c = $(`<div id="html_6d36a7da6885459a9986bfd8989e153c" style="width: 100.0%; height: 100.0%;"><a href="http://itis.kpfu.ru/"target="_blank">КФУ Высшая школа информационных технологий и интеллектуальных систем</a></div>`)[0];
+            popup_c1cde5cfa4e5420b8d3f4d9c02e335cd.setContent(html_6d36a7da6885459a9986bfd8989e153c);
+        
+
+        marker_46dc07899f05497bbe725efbb497e5a9.bindPopup(popup_c1cde5cfa4e5420b8d3f4d9c02e335cd)
+        ;
+
+        
+    
+    
+            var marker_86c62f9c13d347dba1a6e9a478549124 = L.marker(
+                [55.793429, 49.14479],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_df1620b0561740a29f7d8cb04d900f72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_86c62f9c13d347dba1a6e9a478549124.setIcon(icon_df1620b0561740a29f7d8cb04d900f72);
+        
+    
+        var popup_e9f07fff10be49ab8466c53cb0aa8932 = L.popup({"maxWidth": 2650});
+
+        
+            var html_11e84abab6e44702a2eb6e37db9d2c9e = $(`<div id="html_11e84abab6e44702a2eb6e37db9d2c9e" style="width: 100.0%; height: 100.0%;"><a href="http://biology.kpfu.ru/"target="_blank">КФУ Институт фундаментальной медицины и биологии</a></div>`)[0];
+            popup_e9f07fff10be49ab8466c53cb0aa8932.setContent(html_11e84abab6e44702a2eb6e37db9d2c9e);
+        
+
+        marker_86c62f9c13d347dba1a6e9a478549124.bindPopup(popup_e9f07fff10be49ab8466c53cb0aa8932)
+        ;
+
+        
+    
+    
+            var marker_6f444f7dc605418d9df3ae50bd85b58a = L.marker(
+                [55.772021, 49.114616],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_49f0f743daf0473fbebccb518c0acf5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f444f7dc605418d9df3ae50bd85b58a.setIcon(icon_49f0f743daf0473fbebccb518c0acf5b);
+        
+    
+        var popup_0f5e45c280c84fc9a80aabdc1d6f9dc6 = L.popup({"maxWidth": 2650});
+
+        
+            var html_94a140c64cf5478fa3e1c8d2b4fdd587 = $(`<div id="html_94a140c64cf5478fa3e1c8d2b4fdd587" style="width: 100.0%; height: 100.0%;"><a href="http://kpfu.ru/main_page?p_sub=22881"target="_blank">КФУ Инженерный институт</a></div>`)[0];
+            popup_0f5e45c280c84fc9a80aabdc1d6f9dc6.setContent(html_94a140c64cf5478fa3e1c8d2b4fdd587);
+        
+
+        marker_6f444f7dc605418d9df3ae50bd85b58a.bindPopup(popup_0f5e45c280c84fc9a80aabdc1d6f9dc6)
+        ;
+
+        
+    
+    
+            var marker_4815733df3d24a5e98aafe9068a4838b = L.marker(
+                [55.785235, 49.118469],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_94b724afdf44405e8cd83af320e589fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4815733df3d24a5e98aafe9068a4838b.setIcon(icon_94b724afdf44405e8cd83af320e589fe);
+        
+    
+        var popup_3c00ff929d7f452ab1855c8827b8bcd1 = L.popup({"maxWidth": 2650});
+
+        
+            var html_d2f90bca694a4231966746d40546ecef = $(`<div id="html_d2f90bca694a4231966746d40546ecef" style="width: 100.0%; height: 100.0%;"><a href="http://kpfu.ru/main_page?p_sub=216"target="_blank">КФУ Институт международных отношений</a></div>`)[0];
+            popup_3c00ff929d7f452ab1855c8827b8bcd1.setContent(html_d2f90bca694a4231966746d40546ecef);
+        
+
+        marker_4815733df3d24a5e98aafe9068a4838b.bindPopup(popup_3c00ff929d7f452ab1855c8827b8bcd1)
+        ;
+
+        
+    
+    
+            var marker_4576c96f1a8945e9a42d32ab9cdd9891 = L.marker(
+                [55.801015, 49.134405],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_eb79058b734d409598caa6d71530e2d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4576c96f1a8945e9a42d32ab9cdd9891.setIcon(icon_eb79058b734d409598caa6d71530e2d6);
+        
+    
+        var popup_a498df382968409084994434ee319b7e = L.popup({"maxWidth": 2650});
+
+        
+            var html_db7888e3d8094c1796c9042140e83a3e = $(`<div id="html_db7888e3d8094c1796c9042140e83a3e" style="width: 100.0%; height: 100.0%;"><a href="http://www.kpfu.ru/main_page?p_sub=9072"target="_blank">КФУ Высшая школа бизнеса</a></div>`)[0];
+            popup_a498df382968409084994434ee319b7e.setContent(html_db7888e3d8094c1796c9042140e83a3e);
+        
+
+        marker_4576c96f1a8945e9a42d32ab9cdd9891.bindPopup(popup_a498df382968409084994434ee319b7e)
+        ;
+
+        
+    
+    
+            var marker_0d403d38004a49c9b38e3cac20d6e241 = L.marker(
+                [55.792458, 49.122296],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_eaeab04bd9144cf682acca10bc9a9aeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0d403d38004a49c9b38e3cac20d6e241.setIcon(icon_eaeab04bd9144cf682acca10bc9a9aeb);
+        
+    
+        var popup_e9dafa2aba2048cda7a8d66057c6c07c = L.popup({"maxWidth": 2650});
+
+        
+            var html_e4bd133d64644812a97067e0f062dc6b = $(`<div id="html_e4bd133d64644812a97067e0f062dc6b" style="width: 100.0%; height: 100.0%;"><a href="Институт социально-философских наук и массовых коммуникаций"target="_blank">КФУ Институт социально-философских наук и массовых коммуникаций</a></div>`)[0];
+            popup_e9dafa2aba2048cda7a8d66057c6c07c.setContent(html_e4bd133d64644812a97067e0f062dc6b);
+        
+
+        marker_0d403d38004a49c9b38e3cac20d6e241.bindPopup(popup_e9dafa2aba2048cda7a8d66057c6c07c)
+        ;
+
+        
+    
+    
+            var marker_0a477814188742bcb98ecd12639e28e7 = L.marker(
+                [55.793748, 49.115029],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_e61b9f1345d0471288df121742179064 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a477814188742bcb98ecd12639e28e7.setIcon(icon_e61b9f1345d0471288df121742179064);
+        
+    
+        var popup_d992d38e723d4061a68f8524a85b1908 = L.popup({"maxWidth": 2650});
+
+        
+            var html_0ddfe20d4e2645c19f05f6cb483aad13 = $(`<div id="html_0ddfe20d4e2645c19f05f6cb483aad13" style="width: 100.0%; height: 100.0%;"><a href="Институт управления, экономики и финансов"target="_blank">КФУ Институт управления, экономики и финансов</a></div>`)[0];
+            popup_d992d38e723d4061a68f8524a85b1908.setContent(html_0ddfe20d4e2645c19f05f6cb483aad13);
+        
+
+        marker_0a477814188742bcb98ecd12639e28e7.bindPopup(popup_d992d38e723d4061a68f8524a85b1908)
+        ;
+
+        
+    
+    
+            var marker_c5ae348190cd44a0ab375b45f95fcff1 = L.marker(
+                [55.7925, 49.1223],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_b5406040b727417697f13a12b303f758 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c5ae348190cd44a0ab375b45f95fcff1.setIcon(icon_b5406040b727417697f13a12b303f758);
+        
+    
+        var popup_08066b189348470f9d0b593ef0a84d1a = L.popup({"maxWidth": 2650});
+
+        
+            var html_3ca1f440a8fd4796acabb77cf8aaaf8f = $(`<div id="html_3ca1f440a8fd4796acabb77cf8aaaf8f" style="width: 100.0%; height: 100.0%;"><a href="http://hspa.kpfu.ru/"target="_blank">КФУ Высшая школа государственного и муниципального управления</a></div>`)[0];
+            popup_08066b189348470f9d0b593ef0a84d1a.setContent(html_3ca1f440a8fd4796acabb77cf8aaaf8f);
+        
+
+        marker_c5ae348190cd44a0ab375b45f95fcff1.bindPopup(popup_08066b189348470f9d0b593ef0a84d1a)
+        ;
+
+        
+    
+    
+            var marker_7d9486df24df49db8a7df321a062b7ed = L.marker(
+                [55.7924, 49.1376],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_7472d883afb54822a40d50ec6a414e9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7d9486df24df49db8a7df321a062b7ed.setIcon(icon_7472d883afb54822a40d50ec6a414e9d);
+        
+    
+        var popup_82c9f23cc4084b918bb4cea642c975a8 = L.popup({"maxWidth": 2650});
+
+        
+            var html_fd93fb6e1221435586c4e653c3942c33 = $(`<div id="html_fd93fb6e1221435586c4e653c3942c33" style="width: 100.0%; height: 100.0%;"><a href="https://kai.ru/web/institute-of-aviation-land-vehicles-and-energetics"target="_blank">КНИТУ-КАИ Институт авиации, наземного транспорта и энергетики</a></div>`)[0];
+            popup_82c9f23cc4084b918bb4cea642c975a8.setContent(html_fd93fb6e1221435586c4e653c3942c33);
+        
+
+        marker_7d9486df24df49db8a7df321a062b7ed.bindPopup(popup_82c9f23cc4084b918bb4cea642c975a8)
+        ;
+
+        
+    
+    
+            var marker_7cd9d81f1496451c83fc6c5a76e667fe = L.marker(
+                [55.7971, 49.1142],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_e4c71c56d93f411bb23366d88ede4514 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7cd9d81f1496451c83fc6c5a76e667fe.setIcon(icon_e4c71c56d93f411bb23366d88ede4514);
+        
+    
+        var popup_f1274194848a4022931628fb14603041 = L.popup({"maxWidth": 2650});
+
+        
+            var html_7b5b38df408d4320b11fee9b96b6567f = $(`<div id="html_7b5b38df408d4320b11fee9b96b6567f" style="width: 100.0%; height: 100.0%;"><a href="https://kai.ru/web/tehniceskij-kolledz"target="_blank">КНИТУ-КАИ Технический колледж</a></div>`)[0];
+            popup_f1274194848a4022931628fb14603041.setContent(html_7b5b38df408d4320b11fee9b96b6567f);
+        
+
+        marker_7cd9d81f1496451c83fc6c5a76e667fe.bindPopup(popup_f1274194848a4022931628fb14603041)
+        ;
+
+        
+    
+    
+            var marker_a4b5907bed3e48d5a3c3cb156695c9d7 = L.marker(
+                [55.7923, 49.1375],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_a719a1d619134097bd57e8ccdfea75bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a4b5907bed3e48d5a3c3cb156695c9d7.setIcon(icon_a719a1d619134097bd57e8ccdfea75bb);
+        
+    
+        var popup_0581c2809f344fc0959f03a9ac296038 = L.popup({"maxWidth": 2650});
+
+        
+            var html_711d37c5870548208c6ff5d8621109cf = $(`<div id="html_711d37c5870548208c6ff5d8621109cf" style="width: 100.0%; height: 100.0%;"><a href="https://kai.ru/web/institute-of-automation-and-electronic-instrument-making"target="_blank">КНИТУ-КАИ Институт автоматики и электронного приборостроения</a></div>`)[0];
+            popup_0581c2809f344fc0959f03a9ac296038.setContent(html_711d37c5870548208c6ff5d8621109cf);
+        
+
+        marker_a4b5907bed3e48d5a3c3cb156695c9d7.bindPopup(popup_0581c2809f344fc0959f03a9ac296038)
+        ;
+
+        
+    
+    
+            var marker_72de557773294dbfa6676a4b4f453ce7 = L.marker(
+                [55.7969, 49.1338],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_27d706d5899247849542c2e744b6a864 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72de557773294dbfa6676a4b4f453ce7.setIcon(icon_27d706d5899247849542c2e744b6a864);
+        
+    
+        var popup_0d1bac11e6b54cb5808d4f0d51dadb4f = L.popup({"maxWidth": 2650});
+
+        
+            var html_c9b7faffc5294559ab0bd3b58c58f32e = $(`<div id="html_c9b7faffc5294559ab0bd3b58c58f32e" style="width: 100.0%; height: 100.0%;"><a href="https://kai.ru/web/institute-of-technical-cybernetics-and-informatics"target="_blank">КНИТУ-КАИ Институт компьютерных технологий и защиты информации</a></div>`)[0];
+            popup_0d1bac11e6b54cb5808d4f0d51dadb4f.setContent(html_c9b7faffc5294559ab0bd3b58c58f32e);
+        
+
+        marker_72de557773294dbfa6676a4b4f453ce7.bindPopup(popup_0d1bac11e6b54cb5808d4f0d51dadb4f)
+        ;
+
+        
+    
+    
+            var marker_c96a9d8ebd3149b4baf20c20b1c6e08d = L.marker(
+                [55.797, 49.1339],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_e0ae1c579e1440d785491c8a8c7b6025 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c96a9d8ebd3149b4baf20c20b1c6e08d.setIcon(icon_e0ae1c579e1440d785491c8a8c7b6025);
+        
+    
+        var popup_439940d95ca54519a432f475579744d3 = L.popup({"maxWidth": 2650});
+
+        
+            var html_4f3d7b09dc82449f89e1541d2da8045c = $(`<div id="html_4f3d7b09dc82449f89e1541d2da8045c" style="width: 100.0%; height: 100.0%;"><a href="https://kai.ru/web/kolledz-informacionnyh-tehnologij/"target="_blank">КНИТУ-КАИ Колледж информационных технологий</a></div>`)[0];
+            popup_439940d95ca54519a432f475579744d3.setContent(html_4f3d7b09dc82449f89e1541d2da8045c);
+        
+
+        marker_c96a9d8ebd3149b4baf20c20b1c6e08d.bindPopup(popup_439940d95ca54519a432f475579744d3)
+        ;
+
+        
+    
+    
+            var marker_d5774ca7700b4fc78890d25e611ab1b5 = L.marker(
+                [55.797139, 49.124183],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_b6f121d08d164a47b807c44733a16f2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d5774ca7700b4fc78890d25e611ab1b5.setIcon(icon_b6f121d08d164a47b807c44733a16f2d);
+        
+    
+        var popup_4ea49f0d31904ee08f5b13a7c4bbb760 = L.popup({"maxWidth": 2650});
+
+        
+            var html_3eb7012068b34ede85956769ac440345 = $(`<div id="html_3eb7012068b34ede85956769ac440345" style="width: 100.0%; height: 100.0%;"><a href="https://kai.ru/web/institute-of-radio-engineering-and-telecommunications"target="_blank">КНИТУ-КАИ Институт радиоэлектроники и телекоммуникаций</a></div>`)[0];
+            popup_4ea49f0d31904ee08f5b13a7c4bbb760.setContent(html_3eb7012068b34ede85956769ac440345);
+        
+
+        marker_d5774ca7700b4fc78890d25e611ab1b5.bindPopup(popup_4ea49f0d31904ee08f5b13a7c4bbb760)
+        ;
+
+        
+    
+    
+            var marker_57010d7ddf214dde951e8b306ba3b79d = L.marker(
+                [55.823, 49.1361],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_4abe8ae909b9466f8f77c33c3c7f403c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_57010d7ddf214dde951e8b306ba3b79d.setIcon(icon_4abe8ae909b9466f8f77c33c3c7f403c);
+        
+    
+        var popup_914c59a34c6947008ddd06d3493c5e1f = L.popup({"maxWidth": 2650});
+
+        
+            var html_15f066d5c5464f8585d45a5aa4d110ff = $(`<div id="html_15f066d5c5464f8585d45a5aa4d110ff" style="width: 100.0%; height: 100.0%;"><a href="https://kai.ru/web/institute-of-economics-management-and-social-technologies"target="_blank">КНИТУ-КАИ Институт инженерной экономики и предпринимательства</a></div>`)[0];
+            popup_914c59a34c6947008ddd06d3493c5e1f.setContent(html_15f066d5c5464f8585d45a5aa4d110ff);
+        
+
+        marker_57010d7ddf214dde951e8b306ba3b79d.bindPopup(popup_914c59a34c6947008ddd06d3493c5e1f)
+        ;
+
+        
+    
+    
+            var marker_872e2c9273e0486796e2eaffc3ef544e = L.marker(
+                [55.8226, 49.136],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_0b66e8539b4849a6ae05a3238454afcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_872e2c9273e0486796e2eaffc3ef544e.setIcon(icon_0b66e8539b4849a6ae05a3238454afcc);
+        
+    
+        var popup_35f52e33a5f6447caaf17bb99f7ae1e3 = L.popup({"maxWidth": 2650});
+
+        
+            var html_a693e936756c47e1924dcdb8e6b60ba1 = $(`<div id="html_a693e936756c47e1924dcdb8e6b60ba1" style="width: 100.0%; height: 100.0%;"><a href="https://kai.ru/web/physics-and-mathematics-faculty"target="_blank">КНИТУ-КАИ Физико-математический факультет</a></div>`)[0];
+            popup_35f52e33a5f6447caaf17bb99f7ae1e3.setContent(html_a693e936756c47e1924dcdb8e6b60ba1);
+        
+
+        marker_872e2c9273e0486796e2eaffc3ef544e.bindPopup(popup_35f52e33a5f6447caaf17bb99f7ae1e3)
+        ;
+
+        
+    
+    
+            var marker_97b1cbab7ca8498488ee9ce3b14e6d85 = L.marker(
+                [55.7906, 49.1405],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_5d7268c655a943eb887cfa114f7d6c4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_97b1cbab7ca8498488ee9ce3b14e6d85.setIcon(icon_5d7268c655a943eb887cfa114f7d6c4b);
+        
+    
+        var popup_e3737e8f96b4472da31ae7de954ca5b7 = L.popup({"maxWidth": 2650});
+
+        
+            var html_36e7915e03024f93888e76f528bc095e = $(`<div id="html_36e7915e03024f93888e76f528bc095e" style="width: 100.0%; height: 100.0%;"><a href="https://kazangmu.ru/faculty-of-social-work-and-nursing"target="_blank">КГМУ Факультет социальной работы и высшего сестринского образования</a></div>`)[0];
+            popup_e3737e8f96b4472da31ae7de954ca5b7.setContent(html_36e7915e03024f93888e76f528bc095e);
+        
+
+        marker_97b1cbab7ca8498488ee9ce3b14e6d85.bindPopup(popup_e3737e8f96b4472da31ae7de954ca5b7)
+        ;
+
+        
+    
+    
+            var marker_fb536ce15f6c4f4cb1bdc54a6b0293be = L.marker(
+                [55.791, 49.141],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_cccd28f5cee040beb6a942c941a8fed0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fb536ce15f6c4f4cb1bdc54a6b0293be.setIcon(icon_cccd28f5cee040beb6a942c941a8fed0);
+        
+    
+        var popup_89a118bd23f8496e942fadcfd331d367 = L.popup({"maxWidth": 2650});
+
+        
+            var html_99561cff193e4423a8e4485f290f9376 = $(`<div id="html_99561cff193e4423a8e4485f290f9376" style="width: 100.0%; height: 100.0%;"><a href="https://kazangmu.ru/medical-faculty"target="_blank">КГМУ Лечебный факультет</a></div>`)[0];
+            popup_89a118bd23f8496e942fadcfd331d367.setContent(html_99561cff193e4423a8e4485f290f9376);
+        
+
+        marker_fb536ce15f6c4f4cb1bdc54a6b0293be.bindPopup(popup_89a118bd23f8496e942fadcfd331d367)
+        ;
+
+        
+    
+    
+            var marker_facb7207ba574341949e547272a7802c = L.marker(
+                [55.7907, 49.140895],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_8f737ba50dcb4d449ddd3804035331db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_facb7207ba574341949e547272a7802c.setIcon(icon_8f737ba50dcb4d449ddd3804035331db);
+        
+    
+        var popup_bdbd3babceab402a991f88be35cac974 = L.popup({"maxWidth": 2650});
+
+        
+            var html_239ddb5336214ecda37ed17a3f345498 = $(`<div id="html_239ddb5336214ecda37ed17a3f345498" style="width: 100.0%; height: 100.0%;"><a href=","target="_blank">КГМУ Педиатрический факультет</a></div>`)[0];
+            popup_bdbd3babceab402a991f88be35cac974.setContent(html_239ddb5336214ecda37ed17a3f345498);
+        
+
+        marker_facb7207ba574341949e547272a7802c.bindPopup(popup_bdbd3babceab402a991f88be35cac974)
+        ;
+
+        
+    
+    
+            var marker_2148e936fff44c209feefc41af4dd737 = L.marker(
+                [55.79065, 49.1408],
+                {}
+            ).addTo(map_c971f31571364691878f4dc2bef5aa45);
+        
+    
+            var icon_3e1ddf97c9884624a2eed60b9630c29d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2148e936fff44c209feefc41af4dd737.setIcon(icon_3e1ddf97c9884624a2eed60b9630c29d);
+        
+    
+        var popup_fd717c8a969c4f7aa88e89ccd66e001d = L.popup({"maxWidth": 2650});
+
+        
+            var html_544f158f682542b8956af32845ce1197 = $(`<div id="html_544f158f682542b8956af32845ce1197" style="width: 100.0%; height: 100.0%;"><a href=","target="_blank">КГМУ Стоматологический факультет</a></div>`)[0];
+            popup_fd717c8a969c4f7aa88e89ccd66e001d.setContent(html_544f158f682542b8956af32845ce1197);
+        
+
+        marker_2148e936fff44c209feefc41af4dd737.bindPopup(popup_fd717c8a969c4f7aa88e89ccd66e001d)
+        ;
+
+        
+    
+</script>
