@@ -13,4 +13,3 @@ def generate():
 
 
     m.save('app/templates/review.html')
-    print('generated')
